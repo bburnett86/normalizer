@@ -1,5 +1,5 @@
 # Personal Updates
-Place new test examples inside the examples array of hashes, then run 'ruby runner.rb' from the folder domain.
+Place new test examples inside the examples array of hashes. To begin, run 'ruby runner.rb' from the folder domain.
 
 ## Background information:
 These example problems are similar to what we run into where we get car data from a wide variety of sources, and need to normalize the data. Many times users will have typos or use shorthand in a given field.
