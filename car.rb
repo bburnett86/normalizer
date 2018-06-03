@@ -22,8 +22,7 @@ class Car
 
   # Update make if the shortened name is spelled the same as a possible_makes index, returns reformatted string.
   def update_make
-    ma_l = @make.length
-    @possible_makes.map{|make| @make = make if @make.downcase.capitalize == make[0...ma_l]}
+    @possible_makes.map{|make| @make = make if @make.downcase.capitalize == make[0...ma_l = @make.length]}
 
     return @make
   end
@@ -36,9 +35,8 @@ class Car
 
   # Update model if the shortened/regular name is spelled the same as a possible_models index, returns reformatted string.
   def update_model
-    mo_l = @model.length
-    @possible_models.map{|model| @model = model if (@model.downcase.capitalize == model[0...mo_l])}
-    
+    @possible_models.map{|model| @model = model if (@model.downcase.capitalize == model[0...@model.length])}
+
     return @model
   end
 
