@@ -17,7 +17,7 @@ class Car
 
   # Update year if year has a length of four, returns integer.
   def update_year
-    @year = @year.to_i if (@year.length == 4 && (@year.to_i >= 1900 && DateTime.new(@year.to_i, 1, 1) <= DateTime.now.next_year.next_year))
+    @year = @year.to_i if (@year.length == 4 && (@year.to_i >= 1900 && DateTime.new(@year.to_i, DateTime.now.month, DateTime.now.day, 24) <= DateTime.now.next_year.next_year))
   end
 
   # Update make if the shortened name is spelled the same as a possible_makes index, returns reformatted string.
